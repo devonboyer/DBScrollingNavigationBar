@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'DBScrollingNavigationBar_Example', :exclusive => true do
+  pod "DBScrollingNavigationBar", :path => "../"
+end
+
+target 'DBScrollingNavigationBar_Tests', :exclusive => true do
+  pod "DBScrollingNavigationBar", :path => "../"
+
+  
+end
