@@ -7,12 +7,31 @@
 //
 
 #import "DBAppDelegate.h"
+#import "DBViewController.h"
+
+@interface DBAppDelegate ()
+
+@property (nonatomic, strong) UITabBarController *tabBarController;
+
+@end
 
 @implementation DBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    _tabBarController = [[UITabBarController alloc] init];
+    [_window setRootViewController:_tabBarController];
+    [_window makeKeyAndVisible];
+        
+    DBViewController *viewController = [[DBViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    [self.tabBarController setViewControllers:@[navigationController]];
+    
     return YES;
 }
 							
