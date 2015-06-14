@@ -26,6 +26,10 @@ static CGPoint previousContentOffset;
     CGSize contentSize = scrollView.contentSize;
     CGRect tabBarFrame = self.tabBar.frame;
     
+    if (contentSize.height < CGRectGetHeight(scrollView.frame)) {
+        return;
+    }
+    
     CGFloat minY = CGRectGetHeight(self.view.bounds) - CGRectGetHeight(tabBarFrame);
     CGFloat maxY = CGRectGetHeight(self.view.bounds);
     CGFloat scrollDiff = contentOffset.y - previousContentOffset.y;

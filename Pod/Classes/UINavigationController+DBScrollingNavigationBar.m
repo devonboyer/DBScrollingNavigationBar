@@ -24,6 +24,11 @@ static CGPoint previousContentOffset;
 {
     CGPoint contentOffset = scrollView.contentOffset;
     CGSize contentSize = scrollView.contentSize;
+    
+    if (contentSize.height < CGRectGetHeight(scrollView.frame)) {
+        return;
+    }
+    
     CGRect navigationBarFrame = self.navigationBar.frame;
     
     CGFloat framePercentHidden = (20 - navigationBarFrame.origin.y) / (CGRectGetHeight(navigationBarFrame) - 1);
