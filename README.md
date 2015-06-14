@@ -17,12 +17,12 @@ DBScrollingNavigationBar is available through [CocoaPods](http://cocoapods.org).
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "DBScrollingNavigationBar"
+pod 'DBScrollingNavigationBar'
 ```
 
 ## Author
 
-Devon Boyer, devonboyer@outlook.com
+Devon Boyer, devonboyer94@gmail.com
 
 ## License
 
