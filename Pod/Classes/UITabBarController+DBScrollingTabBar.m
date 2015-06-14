@@ -1,9 +1,15 @@
 //
 //  UITabBarController+DBScrollingTabBar.m
-//  Pods
 //
-//  Created by Devon Boyer on 2015-06-13.
 //
+//  GitHub
+//  https://github.com/DevonBoyer/DBScrollingNavigationBar
+//
+//
+//  Created by Devon Boyer on 2015-06-12.
+//  Copyright (c) 2014 Devon Boyer. All rights reserved.
+//
+//  Released under an MIT license: http://opensource.org/licenses/MIT
 //
 
 #import "UITabBarController+DBScrollingTabBar.h"
